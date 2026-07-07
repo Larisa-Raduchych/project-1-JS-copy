@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-1-JS-copy/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Файно свято</title>
+    <script type="module" crossorigin src="/project-1-JS-copy/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-1-JS-copy/assets/vendor-CjAeEpu3.js">
+    <link rel="stylesheet" crossorigin href="/project-1-JS-copy/assets/vendor-DF7SfPGl.css">
+    <link rel="stylesheet" crossorigin href="/project-1-JS-copy/assets/index-DdJg8bqO.css">
+  </head>
+  <body>
+    <header class="section header">
+  <div class="container">
+    <a href="./index.html" class="header-logo" aria-label="Файно свято">
+      <svg class="logo-icon" width="24" height="24">
+        <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-logo"></use>
+      </svg>
+      <span class="logo-text">Файно свято</span>
+    </a>
+
+    <div class="header-menu" id="header-menu">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#event-list" class="nav-link active">Івенти</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-us" class="nav-link">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">Часті питання</a>
+          </li>
+          <li class="nav-item">
+            <a href="#feedback" class="nav-link">Відгуки</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="consultation-btn">Замовити івент</button>
+    </div>
+    <button
+      type="button"
+      class="menu-open-btn"
+      id="open-menu"
+      aria-expanded="false"
+      aria-label="Відкрити меню"
+    >
+      <svg class="burger-icon" width="24" height="24">
+        <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <section class="section navbar is-hidden" id="navbar-menu">
+  <div class="container mobile-menu-container">
+    <div class="mobile-menu-top">
+      <a href="./index.html" class="header-logo" aria-label="Файно свято">
+        <svg class="logo-icon" width="24" height="24">
+          <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-logo"></use>
+        </svg>
+        <span class="logo-text">Файно свято</span>
+      </a>
+    </div>
+
+    <nav class="header-nav mobile-menu-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#event-list" class="nav-link active">Івенти</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about-us" class="nav-link">Про нас</a>
+        </li>
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">Часті питання</a>
+        </li>
+        <li class="nav-item">
+          <a href="#feedback" class="nav-link">Відгуки</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="consultation-btn mobile-menu-btn">
+      Замовити івент
+    </button>
+
+    <button
+      type="button"
+      class="menu-close-btn"
+      id="close-menu"
+      aria-label="Закрити меню"
+    >
+      <svg class="close-icon" width="13" height="13">
+        <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+
+
+    <main>
+      <section class="section hero" id="hero">
+  <div class="container">
+    <h1 class="hero-title">Ваше ідеальне свято — наша турбота</h1>
+    <p class="hero-text">
+      Від дитячого дня народження до великого корпоративу.
+      <br class="mobile-break" />Організуємо подію, яку ви запам'ятаєте
+      назавжди.
+    </p>
+    <a href="#event-list" class="hero-link-events">Обрати івент</a>
+
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="/project-1-JS-copy/assets/Hero_Desktop@1x-DloxoXln.avif 1x, /project-1-JS-copy/assets/Hero_Desktop@2x-D8ZqDMER.avif 2x"
+        width="1312"
+        height="738"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-1-JS-copy/assets/Hero_Tablet@1x-DdLZgr2D.avif 1x, /project-1-JS-copy/assets/Hero_Tablet@2x-B4_OKlgs.avif 2x"
+        width="704"
+        height="396"
+      />
+
+      <img
+        srcset="/project-1-JS-copy/assets/Hero_Mobile@1x-BIQIolBr.avif 1x, /project-1-JS-copy/assets/Hero_Mobile@2x-C5qQSBUR.avif 2x"
+        src="/project-1-JS-copy/assets/Hero_Mobile@1x-BIQIolBr.avif"
+        alt="An emotional, wide-format photograph of a stylish celebration on a summer terrace at sunset. A group of elegantly dressed, happy, diverse people, aged 25-45, are genuinely laughing and casually interacting, holding glasses with drinks. Warm, golden light creates soft highlights, with blurred string lights in the background creating a beautiful bokeh effect. The atmosphere is sophisticated, warm, and filled with genuine joy. The image should be cinematic, highly detailed, with natural and vibrant colors."
+        width="335"
+        height="254"
+      />
+    </picture>
+  </div>
+</section>
+
+      <section class="section popular-events" id="popular-events">
+  <div class="container">
+    <h2 class="section-title">Популярні свята</h2>
+
+    <div class="swiper popular-swiper">
+      <ul class="swiper-wrapper popular-list"></ul>
+    </div>
+
+    <div class="popular-controls">
+      <div class="popular-pagination"></div>
+
+      <div class="popular-buttons">
+        <button
+          class="popular-button popular-button-prev"
+          type="button"
+          aria-label="Попередній слайд"
+        >
+          <svg class="popular-button-icon" width="24" height="24">
+            <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-left"></use>
+          </svg>
+        </button>
+
+        <button
+          class="popular-button popular-button-next"
+          type="button"
+          aria-label="Наступний слайд"
+        >
+          <svg class="popular-button-icon" width="24" height="24">
+            <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section event-list" id="event-list">
+  <div class="container">
+    <h2 class="section-title">Яке свято плануємо?</h2>
+
+    <div class="event-list-categories">
+      <button class="event-category-select" type="button">
+        <span class="current-category">Всі події</span>
+        <svg class="icon-rotate" width="11.6" height="6.7">
+          <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+        </svg>
+      </button>
+
+      <div class="categories-scroll">
+        <ul class="event-category-list js-event-category-list is-hidden"></ul>
+      </div>
+    </div>
+    <ul class="events-list"></ul>
+    <div class="loader is-hidden"></div>
+
+    <button class="show-more-btn is-hidden-btn-more">Показати більше</button>
+  </div>
+</section>
+
+      <section
+  class="section about-us"
+  id="about-us"
+  aria-labelledby="about-us-title"
+>
+  <div class="container about-us-container">
+    <h2 class="section-title about-us-title" id="about-us-title">
+      Про Файно Свято
+    </h2>
+
+    <div class="about-us-slider-wrapper">
+      <div class="swiper about-us-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide about-us-slide">
+            <picture class="about-us-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_1@1x-WfVRkzay.avif 1x, /project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_1@2x-BKO-Hzna.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Mobile_1@1x-BuLwClz9.avif 1x, /project-1-JS-copy/assets/About_Us_Mobile_1@2x-DhnyPsI1.avif 2x"
+                type="image/avif"
+              />
+              <img
+                class="about-us-image"
+                src="/project-1-JS-copy/assets/About_Us_Mobile_1@1x-BuLwClz9.avif"
+                alt="Команда організаторів планує святкову подію"
+                loading="lazy"
+              />
+            </picture>
+
+            <p class="about-us-text">
+              Ми не просто організовуємо івенти. Ми створюємо спогади
+            </p>
+          </div>
+
+          <div class="swiper-slide about-us-slide">
+            <picture class="about-us-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_2@1x-Bw0LXXOz.avif 1x, /project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_2@2x-BAD7zHWt.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Mobile_2@1x-C3OWudFb.avif 1x, /project-1-JS-copy/assets/About_Us_Mobile_2@2x-B8xX086x.avif 2x"
+                type="image/avif"
+              />
+              <img
+                class="about-us-image"
+                src="/project-1-JS-copy/assets/About_Us_Mobile_2@1x-C3OWudFb.avif"
+                alt="Команда Файно Свято на святковому заході"
+                loading="lazy"
+              />
+            </picture>
+
+            <p class="about-us-text">
+              За кожним успішним святом стоять наші люди — креативні сценаристи,
+              уважні координатори
+            </p>
+          </div>
+
+          <div class="swiper-slide about-us-slide">
+            <picture class="about-us-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_3@1x-CUoVTTLM.avif 1x, /project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_3@2x-BqzXkltT.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Mobile_3@1x-yIT29Ukg.avif 1x, /project-1-JS-copy/assets/About_Us_Mobile_3@2x-iKH-wPQw.avif 2x"
+                type="image/avif"
+              />
+              <img
+                class="about-us-image"
+                src="/project-1-JS-copy/assets/About_Us_Mobile_3@1x-yIT29Ukg.avif"
+                alt="Святковий декор з квітами та деталями сервірування"
+                loading="lazy"
+              />
+            </picture>
+
+            <p class="about-us-text">
+              Шаблонні рішення — це не про нас. Ми слухаємо ваші мрії та
+              перетворюємо їх на унікальну концепцію
+            </p>
+          </div>
+
+          <div class="swiper-slide about-us-slide">
+            <picture class="about-us-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_4@1x-B4igeUKG.avif 1x, /project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_4@2x-miqxRiMF.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Mobile_4@1x-3X_iyoyE.avif 1x, /project-1-JS-copy/assets/About_Us_Mobile_4@2x-BO3HR8Ks.avif 2x"
+                type="image/avif"
+              />
+              <img
+                class="about-us-image"
+                src="/project-1-JS-copy/assets/About_Us_Mobile_4@1x-3X_iyoyE.avif"
+                alt="Координаторка використовує планшет для планування події"
+                loading="lazy"
+              />
+            </picture>
+
+            <p class="about-us-text">
+              Ми використовуємо сучасні технологічні рішення для планування та
+              маємо базу перевірених партнерів
+            </p>
+          </div>
+
+          <div class="swiper-slide about-us-slide">
+            <picture class="about-us-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_5@1x-LQnjiw3N.avif 1x, /project-1-JS-copy/assets/About_Us_Desktop_and_Tablet_5@2x-HfPMZ-lF.avif 2x"
+                type="image/avif"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/project-1-JS-copy/assets/About_Us_Mobile_5@1x-Dk4F1IUj.avif 1x, /project-1-JS-copy/assets/About_Us_Mobile_5@2x-Gkrx3Cgk.avif 2x"
+                type="image/avif"
+              />
+              <img
+                class="about-us-image"
+                src="/project-1-JS-copy/assets/About_Us_Mobile_5@1x-Dk4F1IUj.avif"
+                alt="Гості святкують подію з конфеті"
+                loading="lazy"
+              />
+            </picture>
+
+            <p class="about-us-text">
+              Досить мріяти про ідеальне свято — час його створювати!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us-controls">
+        <div class="about-us-pagination"></div>
+
+        <div class="about-us-buttons">
+          <button
+            class="about-us-button about-us-button-prev"
+            type="button"
+            aria-label="Попередній слайд"
+          >
+            <svg class="about-us-button-icon" width="24" height="24">
+              <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-left"></use>
+            </svg>
+          </button>
+
+          <button
+            class="about-us-button about-us-button-next"
+            type="button"
+            aria-label="Наступний слайд"
+          >
+            <svg class="about-us-button-icon" width="24" height="24">
+              <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq" id="faq">
+  <div class="container">
+    <h2 class="faq-title">Залишились питання?</h2>
+    <div class="accordion-container">
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            За який час до події потрібно робити замовлення?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Ми рекомендуємо звертатися до нас щонайменше за 2-3 тижні для
+            невеликих приватних свят та за 1-2 місяці для великих подій, таких
+            як весілля чи корпоративи. Це дозволить нам ретельно все спланувати
+            та забронювати найкращих підрядників.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Що входить у вартість організації?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            У вартість входить розробка концепції та сценарію, підбір локації,
+            координація всіх підрядників (ведучий, фотограф, декоратор тощо),
+            технічне забезпечення та повний супровід вашого свята в день
+            проведення. Кінцевий кошторис завжди узгоджується з вами
+            індивідуально.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Чи працюєте ви в інших містах?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Так, ми з радістю організуємо ваше свято в будь-якому куточку
+            України. Логістичні та транспортні витрати обговорюються додатково
+            на етапі планування бюджету. Ми маємо партнерів у багатьох великих
+            містах, що дозволяє нам зберігати високу якість послуг.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Як відбувається процес оплати?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Зазвичай ми працюємо за передоплатою у розмірі 50% від загального
+            бюджету після підписання договору. Решта суми сплачується за 3-5
+            днів до дати проведення заходу. Ми приймаємо як готівковий, так і
+            безготівковий розрахунок.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Чи можу я вносити зміни до програми свята?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Звісно! Ми гнучкі та завжди готові обговорювати зміни. Ключові
+            моменти програми фіксуються заздалегідь, але невеликі корективи
+            можна вносити в процесі підготовки. Головне — повідомити нас про
+            ваші побажання якомога раніше.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Що станеться, якщо мені доведеться скасувати або перенести подію?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Умови скасування та перенесення детально прописані в нашому
+            договорі. Як правило, сума передоплати не повертається, оскільки
+            вона покриває вже виконану роботу та бронювання. Однак ми завжди
+            намагаємось знайти компромісне рішення, наприклад, перенести подію
+            на іншу дату.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Ви працюєте з моїми підрядниками (фотограф, ведучий)?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Так, ми можемо працювати з вашими перевіреними спеціалістами. У
+            такому випадку ми беремо на себе лише координацію їхньої роботи в
+            день заходу, щоб усе пройшло гладко та за єдиним планом.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Чи допомагаєте ви з декором та флористикою?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Так, це одна з наших ключових послуг. Ми розробляємо концепцію
+            декору, що відповідає стилю вашого свята, та співпрацюємо з
+            найкращими флористами та декораторами для її втілення.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Яка мінімальна кількість гостей для замовлення?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Ми не маємо жорстких обмежень щодо мінімальної кількості гостей. Ми
+            організовуємо як затишні камерні свята для двох, так і масштабні
+            заходи на сотні людей. Вартість послуг розраховується індивідуально,
+            виходячи з обсягу роботи.
+          </p>
+        </div>
+      </div>
+
+      <div class="ac">
+        <h3 class="ac-header">
+          <button type="button" class="ac-trigger">
+            Що відрізняє вас від інших агенцій?
+            <span class="ac-icon-wrap">
+              <svg class="ac-icon" width="15.44" height="8.88">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-down"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="ac-text">
+            Наш головний пріоритет — це індивідуальний підхід та створення
+            унікальної атмосфери. Ми не використовуємо шаблонів. Для нас кожне
+            свято — це окрема історія, яку ми пишемо разом з вами, вкладаючи в
+            неї всю нашу креативність та досвід.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section feedback" id="feedback">
+  <div class="container">
+    <h2 class="feedback-title section-title">Відгуки клієнтів</h2>
+
+    <div class="feedback-slider-wrapper">
+      <div class="feedback-swiper swiper">
+        <ul class="js-feedback-list feedback-list swiper-wrapper"></ul>
+      </div>
+
+      <div class="feedback-pagination-wrapper">
+        <div class="feedback-pagination swiper-pagination"></div>
+      </div>
+
+      <div class="feedback-controls">
+        <div class="feedback-buttons">
+          <button
+            class="feedback-button feedback-prev swiper-button-prev"
+            aria-label="Попередній відгук"
+          >
+            <svg class="feedback-icon" width="24" height="24">
+              <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-left"></use>
+            </svg>
+          </button>
+          <button
+            class="feedback-button feedback-next swiper-button-next"
+            aria-label="Наступний відгук"
+          >
+            <svg class="feedback-icon" width="24" height="24">
+              <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="section footer" id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <a
+        class="footer-logo-reference"
+        href="/goit-bc81-project-js-01/index.html"
+        aria-label="reference to main page"
+      >
+        <svg class="footer-logo-icon" width="281.5" height="47">
+          <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-Logo_andText"></use>
+        </svg>
+      </a>
+      <nav class="footer-navigation">
+        <ul class="footer-navigation-list">
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-item-reference" href="#event-list"
+              >Івенти</a
+            >
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-item-reference" href="#about-us"
+              >Про нас</a
+            >
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-item-reference" href="#faq"
+              >Часті питання</a
+            >
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-item-reference" href="#feedback"
+              >Відгуки</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a
+              class="footer-social-reference"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <svg class="footer-social-icon" width="32" height="32">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-Instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a
+              class="footer-social-reference"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg class="footer-social-icon" width="32" height="32">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-Facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a
+              class="footer-social-reference"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Youtube"
+            >
+              <svg class="footer-social-icon" width="32" height="32">
+                <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-Youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-credits">
+      <p class="footer-credits-text">© 2025 Файно Свято. Всі права захищені.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- MODAL WINDOWS -->
+    <section class="section event-details-modal">
+  <div class="container">
+    <div class="event-modal-overlay">
+      <div class="modal-product"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="section booking-modal">
+  <div class="container">
+    <div class="booking-modal-window">
+      <button
+        class="booking-modal-close-btn"
+        type="button"
+        aria-label="Закрити модальне вікно"
+      >
+        <svg
+          class="booking-modal-close-icon"
+          width="14"
+          height="14"
+          aria-hidden="true"
+        >
+          <use href="/project-1-JS-copy/assets/sprite-kFDfZW0W.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <h2 class="booking-modal-title">Замовити івент</h2>
+
+      <form class="booking-modal-form">
+        <label class="booking-modal-field">
+          <span class="booking-modal-field-label">Ім'я*</span>
+          <input
+            class="booking-modal-input"
+            type="text"
+            name="name"
+            placeholder="Ваше ім'я"
+            autocomplete="name"
+          />
+          <span class="booking-modal-error" id="nameError"></span>
+        </label>
+
+        <label class="booking-modal-field">
+          <span class="booking-modal-field-label">Телефон*</span>
+          <input
+            class="booking-modal-input"
+            type="tel"
+            name="phone"
+            placeholder="38 099 901 11 22"
+            autocomplete="tel"
+          />
+          <span class="booking-modal-error" id="phoneError"></span>
+        </label>
+
+        <label class="booking-modal-field">
+          <span class="booking-modal-field-label">Коментар*</span>
+          <textarea
+            class="booking-modal-textarea"
+            name="comment"
+            placeholder="Напишіть ваш коментар"
+          ></textarea>
+          <span class="booking-modal-error" id="commentError"></span>
+        </label>
+        <div class="loader-booking is-hidden"></div>
+        <button class="booking-modal-submit-btn" type="submit">
+          <span class="booking-modal-submit-text">Надіслати заявку</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  </body>
+</html>
